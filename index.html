@@ -1,124 +1,226 @@
 <!DOCTYPE html>
-<html class="dark" lang="en">
+<html class="dark" lang="es">
+
 <head>
-    <meta charset="utf-8"/>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-    <title>Luis Angel Dynamic Tech Portfolio</title>
-    
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
-    
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta name="google" content="notranslate" />
+
+    <title>Luis Angel Portfolio</title>
+
+    <link rel="icon" type="image/png" href="./assets/img/Mylogo.png">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;900&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+
     <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
-<body class="bg-docks-bg text-docks-text font-body antialiased selection:bg-primary selection:text-white overflow-x-hidden">
+
+<body
+    class="bg-docks-bg text-docks-text font-body antialiased selection:bg-primary selection:text-white overflow-x-hidden">
 
     <div id="custom-cursor"></div>
     <div id="cursor-trail"></div>
 
     <div class="fixed inset-0 pointer-events-none z-0 overflow-hidden">
-        <div class="data-particle" style="left: 10%; animation: stream 15s linear infinite; animation-delay: 0s;">01011001</div>
-        <div class="data-particle" style="left: 20%; animation: stream 18s linear infinite; animation-delay: 2s;">&lt;div&gt;&lt;/div&gt;</div>
-        <div class="data-particle" style="left: 85%; animation: stream 20s linear infinite; animation-delay: 1s;">function()</div>
-        <div class="data-particle" style="left: 70%; animation: stream 12s linear infinite; animation-delay: 5s;">001011</div>
-        <div class="data-particle" style="left: 40%; animation: stream 25s linear infinite; animation-delay: 3s;">{...props}</div>
-        <div class="data-particle" style="left: 95%; animation: stream 22s linear infinite; animation-delay: 7s;">import React</div>
+        <div class="data-particle" style="left: 10%; animation: stream 15s linear infinite; animation-delay: 0s;">
+            01011001</div>
+        <div class="data-particle" style="left: 20%; animation: stream 18s linear infinite; animation-delay: 2s;">
+            <div></div>
+        </div>
+        <div class="data-particle" style="left: 85%; animation: stream 20s linear infinite; animation-delay: 1s;">
+            function()</div>
+        <div class="data-particle" style="left: 70%; animation: stream 12s linear infinite; animation-delay: 5s;">001011
+        </div>
+        <div class="data-particle" style="left: 40%; animation: stream 25s linear infinite; animation-delay: 3s;">
+            {...props}</div>
+        <div class="data-particle" style="left: 95%; animation: stream 22s linear infinite; animation-delay: 7s;">import
+            React</div>
     </div>
 
     <nav class="fixed w-full z-50 backdrop-blur-xl bg-docks-bg/80 border-b border-white/5">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-20 items-center">
                 <div class="flex items-center space-x-3 interactive">
-                    <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-secondary to-primary flex items-center justify-center shadow-[0_0_15px_rgba(239,75,76,0.5)] animate-pulse-slow">
-                        <span class="font-display font-bold text-white text-sm">LAM</span>
+                    <div
+                        class="w-12 h-12 rounded-full overflow-hidden border-2 border-primary/20 shadow-[0_0_15px_rgba(239,75,76,0.3)] hover:scale-110 transition-transform duration-300">
+                        <a href="#">
+                            <img src="./assets/img/Mylogo.png" alt="Logo Luis Angel"
+                                class="w-auto h-12 object-contain hover:scale-110 transition-transform duration-300 mr-1">
+                        </a>
                     </div>
-                    <span class="font-display font-bold text-xl tracking-tight text-white">Luis Angel</span>
+                    <span class="font-display font-bold text-xl tracking-tight text-white">Luis Angel Mendoza</span>
                 </div>
+
                 <div class="hidden md:flex items-center space-x-8">
-                    <a class="text-sm font-medium text-gray-300 hover:text-primary transition-colors" href="#about">About</a>
-                    <a class="text-sm font-medium text-gray-300 hover:text-primary transition-colors" href="#skills">Skills</a>
-                    <a class="text-sm font-medium text-gray-300 hover:text-primary transition-colors" href="#projects">Projects</a>
-                    <a class="px-6 py-2.5 rounded-full liquid-button text-white font-semibold shadow-lg shadow-primary/25" href="#contact">
-                        Contact Me
+                    <a class="text-sm font-medium text-gray-300 hover:text-primary transition-colors"
+                        href="#about">Sobre mí</a>
+                    <a class="text-sm font-medium text-gray-300 hover:text-primary transition-colors"
+                        href="#skills">Stack Tecnológico</a>
+                    <a class="text-sm font-medium text-gray-300 hover:text-primary transition-colors"
+                        href="#experience">Experiencia</a>
+                    <a class="px-6 py-2.5 rounded-full liquid-button text-white font-semibold shadow-lg shadow-primary/25"
+                        href="#contact">
+                        Contáctame
                     </a>
                 </div>
+
                 <div class="md:hidden flex items-center">
-                    <button class="text-gray-300 hover:text-primary">
-                        <span class="material-symbols-outlined">menu</span>
+                    <button id="mobile-menu-btn" class="text-gray-300 hover:text-primary p-2">
+                        <span class="material-symbols-outlined text-3xl">menu</span>
                     </button>
                 </div>
             </div>
         </div>
+
+        <div id="mobile-menu"
+            class="hidden md:hidden bg-docks-bg/95 backdrop-blur-xl border-b border-white/5 transition-all duration-300 w-full absolute top-20 left-0">
+            <div class="px-4 pt-2 pb-6 space-y-4 shadow-xl text-center">
+                <a class="mobile-link block text-lg font-medium text-gray-300 hover:text-primary transition-colors py-2"
+                    href="#about">Sobre mí</a>
+                <a class="mobile-link block text-lg font-medium text-gray-300 hover:text-primary transition-colors py-2"
+                    href="#skills">Stack Tecnológico</a>
+                <a class="mobile-link block text-lg font-medium text-gray-300 hover:text-primary transition-colors py-2"
+                    href="#experience">Experiencia</a>
+                <a class="mobile-link block mt-6 px-6 py-3 mx-auto max-w-xs rounded-full liquid-button text-white font-semibold shadow-lg shadow-primary/25"
+                    href="#contact">
+                    Contáctame
+                </a>
+            </div>
+        </div>
     </nav>
 
-    <section class="relative min-h-screen flex items-center pt-20 overflow-hidden bg-[#0f172a] z-10">
-        <div class="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:50px_50px] [mask-image:radial-gradient(ellipse_at_center,black_50%,transparent_100%)]"></div>
-        <div class="absolute top-0 right-0 w-[800px] h-[800px] bg-secondary/20 rounded-full blur-[120px] opacity-40 mix-blend-screen animate-pulse-slow"></div>
-        <div class="absolute bottom-0 left-0 w-[600px] h-[600px] bg-primary/20 rounded-full blur-[100px] opacity-30 mix-blend-screen animate-float"></div>
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10 grid lg:grid-cols-2 gap-12 items-center">
-            <div class="space-y-8 relative z-20 animate-reveal">
-                <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-white/5 text-gray-300 text-sm font-medium border border-white/10 backdrop-blur-md">
-                    <span class="relative flex h-2 w-2">
-                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
-                        <span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
-                    </span>
-                    <span class="tracking-wide">Available for Freelance</span>
-                </div>
-                <h1 class="font-display text-5xl md:text-7xl lg:text-8xl font-bold leading-tight tracking-tighter text-white">
-                    <span class="block text-transparent bg-clip-text bg-gradient-to-r from-white via-gray-200 to-gray-400 drop-shadow-lg">Luis Angel</span>
+    <section
+        class="relative min-h-screen flex flex-col md:flex-row items-center justify-center pt-24 md:pt-20 pb-12 overflow-hidden bg-[#0f172a] z-10">
+        <div
+            class="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:50px_50px] [mask-image:radial-gradient(ellipse_at_center,black_50%,transparent_100%)]">
+        </div>
+        <div
+            class="absolute top-0 right-0 w-[800px] h-[800px] bg-secondary/20 rounded-full blur-[120px] opacity-40 mix-blend-screen animate-pulse-slow">
+        </div>
+        <div
+            class="absolute bottom-0 left-0 w-[600px] h-[600px] bg-primary/20 rounded-full blur-[100px] opacity-30 mix-blend-screen animate-float">
+        </div>
+
+        <div
+            class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-12 items-center">
+
+            <div
+                class="space-y-6 md:space-y-8 relative z-30 animate-reveal mt-10 md:mt-0 order-2 lg:order-1 text-center md:text-left">
+                <h1
+                    class="font-display text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold leading-tight tracking-tighter text-white">
+                    <span
+                        class="block text-transparent bg-clip-text bg-gradient-to-r from-white via-gray-200 to-gray-400 drop-shadow-lg">Luis
+                        Angel</span>
                     <span class="relative inline-block neon-glow-hover cursor-default interactive">
-                        <span class="absolute -inset-1 bg-gradient-to-r from-primary to-secondary opacity-40 blur-xl animate-pulse"></span>
-                        <span class="relative text-transparent bg-clip-text bg-gradient-to-r from-primary via-white to-secondary">Mendoza</span>
+                        <span
+                            class="absolute -inset-1 bg-gradient-to-r from-primary to-secondary opacity-40 blur-xl animate-pulse"></span>
+                        <span
+                            class="relative text-transparent bg-clip-text bg-gradient-to-r from-primary via-white to-secondary">Mendoza</span>
                     </span>
                 </h1>
-                <h2 class="text-2xl md:text-3xl font-light text-gray-400">
-                    Full Stack & <span class="text-secondary font-medium relative inline-block group cursor-pointer interactive">Web3
-                        <span class="absolute bottom-0 left-0 w-full h-0.5 bg-secondary/50 shadow-[0_0_10px_rgba(61,97,155,0.8)] transition-all group-hover:w-full group-hover:shadow-[0_0_15px_rgba(61,97,155,1)]"></span>
-                    </span> Architect
+                <h2 class="text-xl sm:text-2xl md:text-3xl font-light text-gray-400">
+                    Desarrollador Full Stack
                 </h2>
-                <p class="text-lg text-gray-400 max-w-lg leading-relaxed border-l-2 border-primary/40 pl-6 backdrop-blur-sm bg-white/5 py-4 rounded-r-xl">
-                    Forging immersive digital experiences with neon-lit code. Specializing in high-performance Android apps and next-gen web platforms.
+                <p
+                    class="text-base sm:text-lg text-gray-400 max-w-lg ml-0 lg:mx-0 leading-relaxed border-l-2 border-primary/40 pl-4 md:pl-6 backdrop-blur-sm bg-white/5 py-4 rounded-r-xl text-left">
+                    Impulsemos juntos tu próximo gran paso. Me dedico a crear experiencias digitales que no solo
+                    funcionan bien, sino que ayudan a tu negocio a destacar. Desde la web hasta soluciones móviles,
+                    trabajemos en la solución que tu proyecto necesita.
                 </p>
-                <div class="flex flex-wrap gap-4 pt-4">
-                    <a class="liquid-button relative px-8 py-4 text-white font-semibold rounded-full overflow-hidden shadow-[0_0_20px_rgba(239,75,76,0.4)] transition-all hover:shadow-[0_0_40px_rgba(239,75,76,0.6)] hover:-translate-y-1 group" href="#projects">
-                        <span class="relative flex items-center gap-2">
-                            View Projects <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
-                        </span>
-                    </a>
-                    <a class="px-8 py-4 rounded-full border border-white/10 bg-white/5 hover:bg-white/10 text-white font-semibold transition-all backdrop-blur-sm flex items-center gap-2 group hover:border-white/30" href="https://github.com" target="_blank">
-                        <img alt="GitHub" class="w-5 h-5 invert opacity-80 group-hover:opacity-100 transition-opacity" src="https://github.com/Luismm26"/>
-                        GitHub
+                <div class="flex flex-wrap justify-start gap-4 pt-4">
+                    <a class="px-6 py-3 rounded-full border border-white/10 bg-white/5 hover:bg-white/10 text-white font-semibold transition-all backdrop-blur-sm flex items-center justify-center gap-3 group hover:border-white/30"
+                        href="https://github.com/Luismm26" target="_blank" rel="noopener noreferrer">
+                        <img alt="GitHub" src="assets/icon/github.png"
+                            class="w-6 h-6 sm:w-8 sm:h-8 object-contain group-hover:scale-110 transition-transform duration-300 flex-shrink-0 drop-shadow-md" />
+                        <span class="text-sm tracking-wide">GitHub</span>
                     </a>
                 </div>
             </div>
-            <div class="relative h-[600px] flex items-center justify-center perspective-container lg:-ml-32 z-10 select-none">
-                <div class="relative w-full max-w-[500px] aspect-square transform-style-3d animate-float interactive">
-                    <div class="absolute inset-0 rounded-full border border-secondary/30 scale-125 animate-[spin_20s_linear_infinite] opacity-60 border-dashed"></div>
-                    <div class="absolute inset-0 rounded-full border border-primary/30 scale-110 animate-[spin_25s_linear_infinite_reverse] opacity-60 border-dashed transform rotate-45"></div>
-                    <div class="absolute inset-10 glass-morphism rounded-3xl flex items-center justify-center transform rotate-y-12 rotate-x-6 shadow-2xl shadow-primary/10 transition-transform duration-500 hover:rotate-y-0 hover:rotate-x-0 group cursor-crosshair">
+
+            <div
+                class="relative h-[350px] sm:h-[450px] md:h-[600px] flex items-center justify-center perspective-container lg:-ml-10 z-20 select-none order-1 lg:order-2">
+                <div
+                    class="relative w-full max-w-[300px] sm:max-w-[400px] md:max-w-[500px] aspect-square transform-style-3d animate-float interactive z-10 mt-8 md:mt-0">
+                    <div
+                        class="absolute inset-0 rounded-full border border-secondary/30 scale-125 animate-[spin_20s_linear_infinite] opacity-60 border-dashed">
+                    </div>
+                    <div
+                        class="absolute inset-0 rounded-full border border-primary/30 scale-110 animate-[spin_25s_linear_infinite_reverse] opacity-60 border-dashed transform rotate-45">
+                    </div>
+                    <div
+                        class="absolute inset-10 glass-morphism rounded-3xl flex items-center justify-center transform rotate-y-12 rotate-x-6 shadow-2xl shadow-primary/10 transition-transform duration-500 hover:rotate-y-0 hover:rotate-x-0 group cursor-crosshair">
                         <div class="absolute inset-0 bg-white/5 opacity-10 rounded-3xl"></div>
-                        <div class="transform-style-3d relative w-full h-full flex items-center justify-center group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute font-display font-black text-[10rem] md:text-[14rem] leading-none text-transparent bg-clip-text bg-gradient-to-b from-secondary to-transparent opacity-90 blur-sm animate-pulse-slow" style="transform: translateZ(10px) translateX(-60px);">L</div>
-                            <div class="absolute font-display font-black text-[10rem] md:text-[14rem] leading-none text-transparent bg-clip-text bg-gradient-to-b from-secondary to-transparent opacity-90 mix-blend-overlay" style="transform: translateZ(20px) translateX(-60px);">L</div>
-                            <div class="absolute font-display font-black text-[10rem] md:text-[14rem] leading-none text-transparent bg-clip-text bg-gradient-to-b from-white to-gray-500 mix-blend-overlay z-10" style="transform: translateZ(60px);">A</div>
-                            <div class="absolute font-display font-black text-[10rem] md:text-[14rem] leading-none text-transparent bg-clip-text bg-gradient-to-b from-primary to-transparent opacity-90 blur-sm animate-pulse-slow" style="transform: translateZ(90px) translateX(60px);">M</div>
-                            <div class="absolute font-display font-black text-[10rem] md:text-[14rem] leading-none text-transparent bg-clip-text bg-gradient-to-b from-primary to-transparent opacity-90 mix-blend-overlay" style="transform: translateZ(100px) translateX(60px);">M</div>
+                        <div
+                            class="transform-style-3d relative w-full h-full flex items-center justify-center group-hover:scale-110 transition-transform duration-700">
+                            <div
+                                class="absolute font-display font-black text-[6rem] md:text-[14rem] leading-none text-transparent bg-clip-text bg-gradient-to-b from-secondary to-transparent opacity-90 blur-sm animate-pulse-slow [transform:translateZ(10px)_translateX(-40px)] md:[transform:translateZ(10px)_translateX(-60px)]">
+                                L</div>
+                            <div
+                                class="absolute font-display font-black text-[6rem] md:text-[14rem] leading-none text-transparent bg-clip-text bg-gradient-to-b from-secondary to-transparent opacity-90 mix-blend-overlay [transform:translateZ(20px)_translateX(-40px)] md:[transform:translateZ(20px)_translateX(-60px)]">
+                                L</div>
+
+                            <div
+                                class="absolute font-display font-black text-[6rem] md:text-[14rem] leading-none text-transparent bg-clip-text bg-gradient-to-b from-white to-gray-500 mix-blend-overlay z-10 [transform:translateZ(60px)]">
+                                A</div>
+
+                            <div
+                                class="absolute font-display font-black text-[6rem] md:text-[14rem] leading-none text-transparent bg-clip-text bg-gradient-to-b from-primary to-transparent opacity-90 blur-sm animate-pulse-slow [transform:translateZ(90px)_translateX(40px)] md:[transform:translateZ(90px)_translateX(60px)]">
+                                M</div>
+                            <div
+                                class="absolute font-display font-black text-[6rem] md:text-[14rem] leading-none text-transparent bg-clip-text bg-gradient-to-b from-primary to-transparent opacity-90 mix-blend-overlay [transform:translateZ(100px)_translateX(40px)] md:[transform:translateZ(100px)_translateX(60px)]">
+                                M</div>
                         </div>
-                        <div class="absolute inset-0 bg-gradient-to-tr from-primary/20 via-transparent to-secondary/20 rounded-3xl opacity-40 group-hover:opacity-60 transition-opacity"></div>
+                        <div
+                            class="absolute inset-0 bg-gradient-to-tr from-primary/20 via-transparent to-secondary/20 rounded-3xl opacity-40 group-hover:opacity-60 transition-opacity">
+                        </div>
                     </div>
                 </div>
-                <div class="absolute -right-4 top-24 glass-morphism p-4 rounded-xl transform rotate-12 translate-z-20 animate-float-delayed hover:scale-110 transition-transform interactive">
+
+                <div
+                    class="absolute right-0 md:-right-4 top-10 md:top-24 glass-morphism p-3 md:p-4 rounded-xl transform rotate-12 translate-z-20 animate-float-delayed hover:scale-110 transition-transform interactive z-20">
                     <div class="flex gap-1.5 mb-2 opacity-70">
                         <div class="w-2 h-2 rounded-full bg-red-500"></div>
                         <div class="w-2 h-2 rounded-full bg-yellow-500"></div>
                         <div class="w-2 h-2 rounded-full bg-green-500"></div>
                     </div>
-                    <div class="space-y-1.5 w-32 opacity-80 font-mono text-[10px] text-blue-300">
+                    <div class="space-y-1.5 w-24 md:w-32 opacity-80 font-mono text-[8px] md:text-[10px] text-blue-300">
                         <div class="typing-effect">const dev = "Luis";</div>
                         <div class="typing-effect">dev.animate();</div>
                     </div>
                 </div>
-                <div class="absolute -left-8 bottom-24 w-20 h-20 glass-morphism rounded-2xl flex items-center justify-center transform -rotate-12 translate-z-30 animate-[float_7s_ease-in-out_1s_infinite] shadow-[0_0_20px_rgba(61,97,155,0.3)] hover:shadow-[0_0_30px_rgba(61,97,155,0.6)] transition-shadow interactive">
-                    <img alt="Android" class="w-12 h-12 opacity-90 drop-shadow-[0_0_8px_#3D619B] invert brightness-200" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBT0HY9MR1McYcqjMd24MITQMPJdL38Q__NUz0HODV0q4baAN_3vT5mySJPsEgAHi7-EN44LybRZ9hxAcQDUMLZgw2KEtEVpHgF82I24vUhP5ll9idPB0yaOUigKFXqq3SehLLOiKiG82VZMHoLznDXMZucHnTnXpGAjF6OFEM1QjVZwALmgiJVivZQ9339I7NLaQJwVL9_64gIvD5qYXiTNUGw4ECXYk-RnM5tbnw5Q0yBJ2dcg2MAEgNNpblEBdROv0VaxBbnnRC"/>
+
+                <div
+                    class="absolute left-2 md:-left-8 bottom-12 md:bottom-24 w-14 h-14 md:w-20 md:h-20 glass-morphism rounded-2xl flex items-center justify-center transform -rotate-12 translate-z-30 animate-[float_7s_ease-in-out_1s_infinite] shadow-[0_0_20px_rgba(61,97,155,0.3)] hover:shadow-[0_0_30px_rgba(61,97,155,0.6)] transition-shadow interactive z-20">
+                    <img alt="Mobile App"
+                        class="w-6 h-6 md:w-10 md:h-10 object-contain drop-shadow-[0_0_8px_rgba(61,97,155,0.6)] group-hover:scale-110 transition-transform"
+                        src="./assets/icon/mobile_code_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png" />
+                </div>
+
+                <div
+                    class="absolute left-6 md:left-4 top-4 md:top-16 w-12 h-12 md:w-16 md:h-16 glass-morphism rounded-2xl flex items-center justify-center transform -rotate-6 translate-z-20 animate-[float_5s_ease-in-out_0.5s_infinite] shadow-[0_0_15px_rgba(239,75,76,0.2)] hover:shadow-[0_0_25px_rgba(239,75,76,0.5)] transition-shadow interactive z-20 group">
+                    <img alt="Tecnología 1"
+                        class="w-6 h-6 md:w-8 md:h-8 object-contain drop-shadow-[0_0_8px_rgba(255,255,255,0.4)] group-hover:scale-110 transition-transform"
+                        src="./assets/icon/terminal_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png" />
+                </div>
+
+                <div
+                    class="absolute right-0 md:-right-8 top-1/2 w-10 h-10 md:w-14 md:h-14 glass-morphism rounded-xl flex items-center justify-center transform rotate-6 translate-z-30 animate-[float_6s_ease-in-out_1.5s_infinite] shadow-[0_0_15px_rgba(255,255,255,0.1)] hover:shadow-[0_0_25px_rgba(255,255,255,0.3)] transition-shadow interactive z-20 group">
+                    <img alt="Tecnología 2"
+                        class="w-5 h-5 md:w-7 md:h-7 object-contain drop-shadow-[0_0_8px_rgba(255,255,255,0.4)] group-hover:scale-110 transition-transform"
+                        src="./assets/icon/developer_mode_tv_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png" />
+                </div>
+
+                <div
+                    class="absolute right-4 md:right-12 bottom-6 md:bottom-12 glass-morphism px-3 py-1.5 md:px-4 md:py-2 rounded-full transform -rotate-3 translate-z-10 animate-[float_8s_ease-in-out_2s_infinite] border border-white/10 hover:border-primary/50 transition-colors interactive z-20">
+                    <span class="flex items-center gap-1.5 md:gap-2">
+                        <span class="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-primary animate-pulse"></span>
+                        <span class="text-[10px] md:text-xs font-bold text-gray-200 tracking-wider">Clean
+                            Architecture</span>
+                    </span>
                 </div>
             </div>
         </div>
@@ -128,28 +230,41 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col md:flex-row items-center gap-16 animate-reveal" style="animation-delay: 0.2s;">
                 <div class="w-full md:w-1/2 relative group interactive">
-                    <div class="absolute inset-0 bg-secondary/20 transform translate-x-4 translate-y-4 rounded-2xl group-hover:translate-x-2 group-hover:translate-y-2 transition-transform duration-500"></div>
-                    <img alt="Abstract 3D software architecture visualization" class="rounded-2xl shadow-2xl relative z-10 w-full h-auto object-cover transition-all duration-500 transform group-hover:scale-[1.02] border border-white/10" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCK65OKcuq8TDVYoUr9y3VMAhS7B4-DxRhtoDli7fqaS-M2KqATWYFmuyEvHAiH2SkLUEflAhVfJlLstarZDQFVcY9fGW-nL40MJScAo0KcN7NIenZr-4_HXieKJ0lZkf43Zz3pR2yqrR3cYXvbz7p1J1RPlh6H3grOsY1e6-VcfvtUr-2rV0MvCfRXrx8AgF_oL0MQAqpnpiQNoP8HNXBaEmvjAa5lWuq8R_SjTBRtcRdUFPmsmN1O1YVcvybB4339IkFvV6blPd15"/>
+                    <div
+                        class="absolute inset-0 bg-secondary/20 transform translate-x-4 translate-y-4 rounded-2xl group-hover:translate-x-2 group-hover:translate-y-2 transition-transform duration-500">
+                    </div>
+                    <img alt="Abstract 3D software architecture visualization"
+                        class="rounded-2xl shadow-2xl relative z-10 w-full h-auto object-cover transition-all duration-500 transform group-hover:scale-[1.02] border border-white/10"
+                        src="assets/img/Myprofile.png" />
                 </div>
                 <div class="w-full md:w-1/2 space-y-6">
-                    <h2 class="font-display text-4xl font-bold text-white">About Me</h2>
+                    <h2 class="font-display text-4xl font-bold text-white">Sobre Mí</h2>
                     <div class="h-1 w-20 bg-primary rounded-full relative overflow-hidden">
-                        <div class="absolute inset-0 bg-white/50 w-full -translate-x-full animate-[shimmer_2s_infinite]"></div>
+                        <div
+                            class="absolute inset-0 bg-white/50 w-full -translate-x-full animate-[shimmer_2s_infinite]">
+                        </div>
                     </div>
                     <p class="text-gray-300 leading-relaxed">
-                        I'm a passionate developer with a knack for solving complex problems through code. With a background in Computer Science and over 5 years of industry experience, I bridge the gap between functional backend logic and beautiful frontend interfaces.
+                        Creo que la tecnología no debería ser una barrera, sino el puente que lleve tus ideas al
+                        siguiente nivel. Con más de 5 años trabajando en el sector digital, me dedico a construir
+                        soluciones que van más allá de una simple pantalla; diseño herramientas pensadas para potenciar
+                        el crecimiento de tu negocio y mejorar la experiencia de tus usuarios.
                     </p>
                     <p class="text-gray-300 leading-relaxed">
-                        My journey started with Android development, creating native experiences, and expanded into the web ecosystem. Today, I build comprehensive full-stack solutions that scale.
+                        Mi trayectoria me ha permitido entender cómo funciona el "motor" de las aplicaciones para que
+                        sean rápidas y seguras, pero mi curiosidad me impulsa a expandirme constantemente hacia el
+                        desarrollo web y móvil. Mi objetivo es ofrecerte un acompañamiento integral, donde cada línea de
+                        código tenga un propósito claro: hacer que tu proyecto destaque en un mercado competitivo.
+                    </p>
+                    <p class="text-gray-300 leading-relaxed">
+                        No solo desarrollo software, me involucro en la visión de quienes confían en mí para convertir
+                        sus retos en resultados tangibles. ¿Hacemos crecer tu próximo gran proyecto juntos?
                     </p>
                     <div class="grid grid-cols-2 gap-6 pt-4">
-                        <div class="p-4 rounded-lg bg-white/5 border border-white/5 hover:border-primary/50 transition-colors interactive">
-                            <h4 class="text-2xl font-bold text-primary">5+</h4>
-                            <p class="text-sm text-gray-400">Years Experience</p>
-                        </div>
-                        <div class="p-4 rounded-lg bg-white/5 border border-white/5 hover:border-secondary/50 transition-colors interactive">
-                            <h4 class="text-2xl font-bold text-primary">50+</h4>
-                            <p class="text-sm text-gray-400">Projects Completed</p>
+                        <div
+                            class="p-4 rounded-lg bg-white/5 border border-white/5 hover:border-secondary/50 transition-colors interactive">
+                            <h4 class="text-2xl font-bold text-primary">2+</h4>
+                            <p class="text-sm text-gray-400">Años de Experiencia</p>
                         </div>
                     </div>
                 </div>
@@ -160,67 +275,109 @@
     <section class="py-20 bg-docks-bg relative z-10" id="skills">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16 animate-reveal" style="animation-delay: 0.3s;">
-                <h2 class="font-display text-4xl font-bold text-white mb-4">Technical Expertise</h2>
-                <p class="text-gray-300">My toolbelt is stocked with modern technologies for every layer of the stack.</p>
+                <h2 class="font-display text-4xl font-bold text-white mb-4">Stack Tecnológico</h2>
+                <p class="text-gray-300">Las herramientas que utilizo para construir soluciones robustas, desde la
+                    lógica del servidor hasta el despliegue en producción.</p>
             </div>
             <div class="grid md:grid-cols-3 gap-8">
-                <div class="glowing-border glass-morphism rounded-2xl p-8 hover:-translate-y-2 transition-transform duration-300 animate-reveal interactive" style="animation-delay: 0.4s;">
-                    <div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-6 shadow-inner shadow-primary/20">
+                <div class="glowing-border glass-morphism rounded-2xl p-8 hover:-translate-y-2 transition-transform duration-300 animate-reveal interactive"
+                    style="animation-delay: 0.4s;">
+                    <div
+                        class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-6 shadow-inner shadow-primary/20">
+                        <span class="material-symbols-outlined text-primary text-3xl">code</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-4">Desarrollo Backend</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center text-gray-300 hover:text-white transition-colors">
+                            <span
+                                class="w-1.5 h-1.5 bg-primary rounded-full mr-2 shadow-[0_0_8px_rgba(239,75,76,0.8)]"></span>
+                            Php & Laravel
+                        </li>
+                        <li class="flex items-center text-gray-300 hover:text-white transition-colors">
+                            <span
+                                class="w-1.5 h-1.5 bg-primary rounded-full mr-2 shadow-[0_0_8px_rgba(239,75,76,0.8)]"></span>
+                            Aquitectura API & REST
+                        </li>
+                        <li class="flex items-center text-gray-300 hover:text-white transition-colors">
+                            <span
+                                class="w-1.5 h-1.5 bg-primary rounded-full mr-2 shadow-[0_0_8px_rgba(239,75,76,0.8)]"></span>
+                            Gestion de Base de Datos MySQL/SQL
+                        </li>
+                        <li class="flex items-center text-gray-300 hover:text-white transition-colors">
+                            <span
+                                class="w-1.5 h-1.5 bg-primary rounded-full mr-2 shadow-[0_0_8px_rgba(239,75,76,0.8)]"></span>
+                            Logica y Seguridad del Servidor
+                        </li>
+                    </ul>
+                </div>
+                <div class="glowing-border glass-morphism rounded-2xl p-8 hover:-translate-y-2 transition-transform duration-300 animate-reveal interactive"
+                    style="animation-delay: 0.5s;">
+                    <div
+                        class="w-24 h-14 bg-primary/10 rounded-xl flex items-center justify-center gap-3 mb-6 shadow-inner shadow-primary/20">
+                        <span class="material-symbols-outlined text-primary text-3xl">web</span>
                         <span class="material-symbols-outlined text-primary text-3xl">android</span>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-4">Android Development</h3>
+                    <h3 class="text-xl font-bold text-white mb-4">Desarrollo Frontend & Mobile</h3>
                     <ul class="space-y-2">
                         <li class="flex items-center text-gray-300 hover:text-white transition-colors">
-                            <span class="w-1.5 h-1.5 bg-primary rounded-full mr-2 shadow-[0_0_8px_rgba(239,75,76,0.8)]"></span> Kotlin & Java
+                            <span
+                                class="w-1.5 h-1.5 bg-primary rounded-full mr-2 shadow-[0_0_8px_rgba(61,97,155,0.8)]"></span>
+                            Kotlin
                         </li>
                         <li class="flex items-center text-gray-300 hover:text-white transition-colors">
-                            <span class="w-1.5 h-1.5 bg-primary rounded-full mr-2 shadow-[0_0_8px_rgba(239,75,76,0.8)]"></span> Jetpack Compose
+                            <span
+                                class="w-1.5 h-1.5 bg-primary rounded-full mr-2 shadow-[0_0_8px_rgba(61,97,155,0.8)]"></span>
+                            jetpack Compose
                         </li>
                         <li class="flex items-center text-gray-300 hover:text-white transition-colors">
-                            <span class="w-1.5 h-1.5 bg-primary rounded-full mr-2 shadow-[0_0_8px_rgba(239,75,76,0.8)]"></span> MVVM Architecture
+                            <span
+                                class="w-1.5 h-1.5 bg-primary rounded-full mr-2 shadow-[0_0_8px_rgba(61,97,155,0.8)]"></span>
+                            MVVM Architecture
                         </li>
                         <li class="flex items-center text-gray-300 hover:text-white transition-colors">
-                            <span class="w-1.5 h-1.5 bg-primary rounded-full mr-2 shadow-[0_0_8px_rgba(239,75,76,0.8)]"></span> Retrofit & Room
+                            <span
+                                class="w-1.5 h-1.5 bg-primary rounded-full mr-2 shadow-[0_0_8px_rgba(61,97,155,0.8)]"></span>
+                            HTML5 / CSS / JavaScript
+                        </li>
+                        <li class="flex items-center text-gray-300 hover:text-white transition-colors">
+                            <span
+                                class="w-1.5 h-1.5 bg-primary rounded-full mr-2 shadow-[0_0_8px_rgba(61,97,155,0.8)]"></span>
+                            Tailwind CSS & Bootstrap
+                        </li>
+                        <li class="flex items-center text-gray-300 hover:text-white transition-colors">
+                            <span
+                                class="w-1.5 h-1.5 bg-primary rounded-full mr-2 shadow-[0_0_8px_rgba(61,97,155,0.8)]"></span>
+                            Diseño responsivo & UI/UX
                         </li>
                     </ul>
                 </div>
-                <div class="glowing-border glass-morphism rounded-2xl p-8 hover:-translate-y-2 transition-transform duration-300 animate-reveal interactive" style="animation-delay: 0.5s;">
-                    <div class="w-14 h-14 bg-secondary/10 rounded-xl flex items-center justify-center mb-6 shadow-inner shadow-secondary/20">
-                        <span class="material-symbols-outlined text-secondary text-3xl">language</span>
+                <div class="glowing-border glass-morphism rounded-2xl p-8 hover:-translate-y-2 transition-transform duration-300 animate-reveal interactive"
+                    style="animation-delay: 0.6s;">
+                    <div
+                        class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-6 shadow-inner shadow-primary/20">
+                        <span class="material-symbols-outlined text-primary text-3xl">deployed_code</span>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-4">Web Frontend</h3>
+                    <h3 class="text-xl font-bold text-white mb-4">Infraestructura & Deploy</h3>
                     <ul class="space-y-2">
                         <li class="flex items-center text-gray-300 hover:text-white transition-colors">
-                            <span class="w-1.5 h-1.5 bg-secondary rounded-full mr-2 shadow-[0_0_8px_rgba(61,97,155,0.8)]"></span> React.js & Next.js
+                            <span
+                                class="w-1.5 h-1.5 bg-primary rounded-full mr-2 shadow-[0_0_8px_rgba(61,97,155,0.8)]"></span>
+                            Servidores Linux & Entornos LAMPP
                         </li>
                         <li class="flex items-center text-gray-300 hover:text-white transition-colors">
-                            <span class="w-1.5 h-1.5 bg-secondary rounded-full mr-2 shadow-[0_0_8px_rgba(61,97,155,0.8)]"></span> Tailwind CSS
+                            <span
+                                class="w-1.5 h-1.5 bg-primary rounded-full mr-2 shadow-[0_0_8px_rgba(61,97,155,0.8)]"></span>
+                            Despliegue a producción
                         </li>
                         <li class="flex items-center text-gray-300 hover:text-white transition-colors">
-                            <span class="w-1.5 h-1.5 bg-secondary rounded-full mr-2 shadow-[0_0_8px_rgba(61,97,155,0.8)]"></span> TypeScript
+                            <span
+                                class="w-1.5 h-1.5 bg-primary rounded-full mr-2 shadow-[0_0_8px_rgba(61,97,155,0.8)]"></span>
+                            Control de versiones Git & GitHub
                         </li>
                         <li class="flex items-center text-gray-300 hover:text-white transition-colors">
-                            <span class="w-1.5 h-1.5 bg-secondary rounded-full mr-2 shadow-[0_0_8px_rgba(61,97,155,0.8)]"></span> HTML5 & SCSS
-                        </li>
-                    </ul>
-                </div>
-                <div class="glowing-border glass-morphism rounded-2xl p-8 hover:-translate-y-2 transition-transform duration-300 animate-reveal interactive" style="animation-delay: 0.6s;">
-                    <div class="w-14 h-14 bg-docks-text/10 rounded-xl flex items-center justify-center mb-6 shadow-inner shadow-white/10">
-                        <span class="material-symbols-outlined text-gray-300 text-3xl">layers</span>
-                    </div>
-                    <h3 class="text-xl font-bold text-white mb-4">Full Stack</h3>
-                    <ul class="space-y-2">
-                        <li class="flex items-center text-gray-300 hover:text-white transition-colors">
-                            <span class="w-1.5 h-1.5 bg-gray-400 rounded-full mr-2"></span> Node.js & Express
-                        </li>
-                        <li class="flex items-center text-gray-300 hover:text-white transition-colors">
-                            <span class="w-1.5 h-1.5 bg-gray-400 rounded-full mr-2"></span> PostgreSQL & MongoDB
-                        </li>
-                        <li class="flex items-center text-gray-300 hover:text-white transition-colors">
-                            <span class="w-1.5 h-1.5 bg-gray-400 rounded-full mr-2"></span> Docker & AWS
-                        </li>
-                        <li class="flex items-center text-gray-300 hover:text-white transition-colors">
-                            <span class="w-1.5 h-1.5 bg-gray-400 rounded-full mr-2"></span> REST & GraphQL APIs
+                            <span
+                                class="w-1.5 h-1.5 bg-primary rounded-full mr-2 shadow-[0_0_8px_rgba(61,97,155,0.8)]"></span>
+                            Mantenimiento y Escalabilidad
                         </li>
                     </ul>
                 </div>
@@ -228,112 +385,151 @@
         </div>
     </section>
 
-    <section class="py-20 bg-navy-dark border-t border-white/5 relative z-10" id="projects">
+    <section class="py-20 bg-navy-dark border-t border-white/5 relative z-10" id="experience">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-end mb-12 animate-reveal">
-                <div>
-                    <h2 class="font-display text-4xl font-bold text-white mb-4">Featured Projects</h2>
-                    <p class="text-gray-300">Some of my best work.</p>
-                </div>
-                <a class="hidden md:flex items-center text-primary font-medium hover:text-white transition-colors group" href="#">
-                    View all projects <span class="material-symbols-outlined text-sm ml-1 group-hover:translate-x-1 transition-transform">arrow_forward</span>
-                </a>
+            <div class="text-center max-w-3xl mx-auto mb-16 animate-reveal">
+                <h2 class="font-display text-4xl font-bold text-white mb-4">Experiencia e Impacto</h2>
+                <p class="text-gray-300">
+                    Un resumen de mi involucramiento en diferentes áreas del desarrollo, creando soluciones desde cero
+                    hasta su despliegue en producción.
+                </p>
             </div>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="group relative rounded-2xl overflow-hidden shadow-lg bg-docks-bg border border-white/5 animate-reveal interactive" style="animation-delay: 0.2s;">
-                    <div class="aspect-video bg-navy-medium overflow-hidden relative">
-                        <img alt="Finance Dashboard App Interface" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-90 group-hover:opacity-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdrGDu-HTv2-1VU7v0uEK4MqR92_m37VravwecMfrNwuXHTyvYp5Hl-zQK0BIeAFtgSsxYPOmACEcmLPm5xVYOdU19J-6aWEOGnTv8fHL3Bcxb6OGPUkypRg_0uxk7cqMtP1WNn1-LBZpLoZYuWemSzAVSAy8hwfnwadF3MuPyCiPjxEW3coGXTNoMLiVKh9OInlsXuvkEKXQPUV4yAbkM3o6b1L_tRzRNZnyYP5BrNfa51FnDpE-xaL3OXx6rrG-s6qN3TatSzRSQ"/>
-                        <div class="absolute inset-0 bg-docks-bg/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4 backdrop-blur-sm">
-                            <a class="p-3 bg-white rounded-full hover:bg-primary hover:text-white transition-all hover:scale-110 text-docks-bg shadow-lg" href="#"><span class="material-symbols-outlined text-xl">link</span></a>
-                            <a class="p-3 bg-white rounded-full hover:bg-secondary hover:text-white transition-all hover:scale-110 text-docks-bg shadow-lg" href="#"><span class="material-symbols-outlined text-xl">code</span></a>
-                        </div>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div
+                    class="glass-morphism p-8 rounded-2xl border border-white/5 hover:border-primary/40 transition-all duration-300 hover:-translate-y-2 group animate-reveal">
+                    <div
+                        class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <span class="material-symbols-outlined text-primary text-2xl">smartphone</span>
                     </div>
-                    <div class="p-6 relative">
-                        <div class="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-primary/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                        <div class="text-xs font-bold text-primary mb-2 uppercase tracking-wider">FinTech • Android</div>
-                        <h3 class="text-xl font-bold text-white mb-2 group-hover:text-primary transition-colors">CoinTracker Mobile</h3>
-                        <p class="text-gray-400 text-sm mb-4 line-clamp-3">A native Android application for tracking cryptocurrency portfolios in real-time. Features include custom alerts and secure wallet integration.</p>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="px-2 py-1 bg-white/10 text-xs font-medium text-gray-300 rounded-md border border-white/5">Kotlin</span>
-                            <span class="px-2 py-1 bg-white/10 text-xs font-medium text-gray-300 rounded-md border border-white/5">Jetpack</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="group relative rounded-2xl overflow-hidden shadow-lg bg-docks-bg border border-white/5 animate-reveal interactive" style="animation-delay: 0.4s;">
-                    <div class="aspect-video bg-navy-medium overflow-hidden relative">
-                        <img alt="E-commerce Web Platform" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-90 group-hover:opacity-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDilh0p24eCdD8lAOoZe-Iys-AdUE38bfjlD3dtnhZ6zCGWZ8V9BXDh4fIGK9D56Z1vumZp4ehgt_hVC114ylZG5L7qZ28BLmgfJGWe_lzw92anV73A4VtUQC0uyiqh0wIcQ918Ph-t6TVFpngX_mCfDGCEUYNEvSqQ5l2_xzOQ8hsNXEFlgmtZZf8Z1GdEuZtqGhJMTA9PqQXKKG6R04dOQ_iF_G1oremkvvuzfOaOPFasfQOKBgownI1IZHi4xwu9bu74IhuvS24F"/>
-                        <div class="absolute inset-0 bg-docks-bg/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4 backdrop-blur-sm">
-                            <a class="p-3 bg-white rounded-full hover:bg-primary hover:text-white transition-all hover:scale-110 text-docks-bg shadow-lg" href="#"><span class="material-symbols-outlined text-xl">link</span></a>
-                            <a class="p-3 bg-white rounded-full hover:bg-secondary hover:text-white transition-all hover:scale-110 text-docks-bg shadow-lg" href="#"><span class="material-symbols-outlined text-xl">code</span></a>
-                        </div>
-                    </div>
-                    <div class="p-6 relative">
-                        <div class="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-secondary/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                        <div class="text-xs font-bold text-secondary mb-2 uppercase tracking-wider">E-Commerce • Full Stack</div>
-                        <h3 class="text-xl font-bold text-white mb-2 group-hover:text-secondary transition-colors">ShopScale Platform</h3>
-                        <p class="text-gray-400 text-sm mb-4 line-clamp-3">A scalable e-commerce solution built with Next.js and Node.js. Includes a custom CMS for inventory management.</p>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="px-2 py-1 bg-white/10 text-xs font-medium text-gray-300 rounded-md border border-white/5">Next.js</span>
-                            <span class="px-2 py-1 bg-white/10 text-xs font-medium text-gray-300 rounded-md border border-white/5">Node.js</span>
-                        </div>
+                    <h3 class="text-2xl font-bold text-white mb-3">Ecosistema Móvil (Android)</h3>
+                    <p class="text-gray-300 mb-6 leading-relaxed">
+                        Desarrollo aplicaciones nativas enfocadas en el rendimiento y la experiencia del usuario.
+                        Utilizo arquitecturas limpias (como MVVM) para construir interfaces fluidas y bases de código
+                        escalables, asegurando que tu aplicación móvil sea ágil, moderna y fácil de mantener.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span
+                            class="px-3 py-1 bg-white/5 text-xs font-medium text-gray-300 rounded-full border border-white/10">Kotlin</span>
+                        <span
+                            class="px-3 py-1 bg-white/5 text-xs font-medium text-gray-300 rounded-full border border-white/10">Android
+                            Studio</span>
+                        <span
+                            class="px-3 py-1 bg-white/5 text-xs font-medium text-gray-300 rounded-full border border-white/10">MVVM</span>
                     </div>
                 </div>
-                <div class="group relative rounded-2xl overflow-hidden shadow-lg bg-docks-bg border border-white/5 animate-reveal interactive" style="animation-delay: 0.6s;">
-                    <div class="aspect-video bg-navy-medium overflow-hidden relative">
-                        <img alt="Analytics Dashboard" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-90 group-hover:opacity-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVudos7KoG7K643FIyWpmxhWZ-zMIAcsUu46Aa87XCBymnCZiO8p8_3pyitbciL0e3uRzqYzBgqwMjOL4kjnpWOERrF95O2Jvfaimwk9xCOUFBtAtLMSQTc9rZJOcq63-6NUww_L8bAFtrfH6U1F1ouOZFkyzn1OexBqQR7unEUpUYRHrHxnzmVfvsrPVT4l98bnSUs-1EK9W3B6VJzJWkbOXTQCljGW280WsRXBZVRLV4Oog67d8ewkyXCqtbOYcpTu5CXV69TszG"/>
-                        <div class="absolute inset-0 bg-docks-bg/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4 backdrop-blur-sm">
-                            <a class="p-3 bg-white rounded-full hover:bg-primary hover:text-white transition-all hover:scale-110 text-docks-bg shadow-lg" href="#"><span class="material-symbols-outlined text-xl">link</span></a>
-                            <a class="p-3 bg-white rounded-full hover:bg-secondary hover:text-white transition-all hover:scale-110 text-docks-bg shadow-lg" href="#"><span class="material-symbols-outlined text-xl">code</span></a>
-                        </div>
+                <div class="glass-morphism p-8 rounded-2xl border border-white/5 hover:border-secondary/40 transition-all duration-300 hover:-translate-y-2 group animate-reveal"
+                    style="animation-delay: 0.2s;">
+                    <div
+                        class="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <span class="material-symbols-outlined text-secondary text-2xl">dns</span>
                     </div>
-                    <div class="p-6 relative">
-                        <div class="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-white/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                        <div class="text-xs font-bold text-white mb-2 uppercase tracking-wider">SaaS • Web</div>
-                        <h3 class="text-xl font-bold text-white mb-2 group-hover:text-primary transition-colors">DataViz Analytics</h3>
-                        <p class="text-gray-400 text-sm mb-4 line-clamp-3">Interactive data visualization dashboard for tracking SaaS metrics. Uses D3.js for complex charts and graphs.</p>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="px-2 py-1 bg-white/10 text-xs font-medium text-gray-300 rounded-md border border-white/5">React</span>
-                            <span class="px-2 py-1 bg-white/10 text-xs font-medium text-gray-300 rounded-md border border-white/5">D3.js</span>
-                        </div>
+                    <h3 class="text-2xl font-bold text-white mb-3">Arquitectura Backend y APIs</h3>
+                    <p class="text-gray-300 mb-6 leading-relaxed">
+                        Mi área de mayor experiencia. Construyo la lógica que sostiene tu negocio digital. Me
+                        especializo en el desarrollo de APIs robustas, gestión eficiente de bases de datos y la
+                        configuración de entornos en servidores Linux para garantizar que la información de tus usuarios
+                        esté siempre segura y disponible.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span
+                            class="px-3 py-1 bg-white/5 text-xs font-medium text-gray-300 rounded-full border border-white/10">PHP
+                            / Laravel</span>
+                        <span
+                            class="px-3 py-1 bg-white/5 text-xs font-medium text-gray-300 rounded-full border border-white/10">MySQL</span>
+                        <span
+                            class="px-3 py-1 bg-white/5 text-xs font-medium text-gray-300 rounded-full border border-white/10">Linux
+                            / LAMPP</span>
                     </div>
                 </div>
-            </div>
-            <div class="mt-8 text-center md:hidden">
-                <a class="inline-flex items-center text-primary font-medium hover:text-white transition-colors" href="#">
-                    View all projects <span class="material-symbols-outlined text-sm ml-1">arrow_forward</span>
-                </a>
+                <div class="glass-morphism p-8 rounded-2xl border border-white/5 hover:border-white/40 transition-all duration-300 hover:-translate-y-2 group animate-reveal md:col-span-2 lg:col-span-1"
+                    style="animation-delay: 0.4s;">
+                    <div
+                        class="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <span class="material-symbols-outlined text-gray-200 text-2xl">web</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-3">Plataformas Web y Deploy</h3>
+                    <p class="text-gray-300 mb-6 leading-relaxed">
+                        Creo ecosistemas web completos combinando el poder del servidor con interfaces dinámicas. Desde
+                        la maquetación responsiva hasta la conexión con la base de datos y el despliegue final (deploy),
+                        me encargo de todo el proceso técnico para que tu plataforma esté lista para salir al mercado.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span
+                            class="px-3 py-1 bg-white/5 text-xs font-medium text-gray-300 rounded-full border border-white/10">HTML5
+                            / CSS / JS</span>
+                        <span
+                            class="px-3 py-1 bg-white/5 text-xs font-medium text-gray-300 rounded-full border border-white/10">Diseño
+                            Responsivo</span>
+                        <span
+                            class="px-3 py-1 bg-white/5 text-xs font-medium text-gray-300 rounded-full border border-white/10">Deploy</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="py-24 bg-gradient-to-br from-navy-dark to-black text-white relative overflow-hidden z-10" id="contact">
-        <div class="absolute top-0 right-0 w-64 h-64 bg-primary rounded-full blur-[100px] opacity-20 animate-pulse-slow"></div>
-        <div class="absolute bottom-0 left-0 w-64 h-64 bg-secondary rounded-full blur-[100px] opacity-20 animate-pulse-slow"></div>
+    <section class="py-24 bg-gradient-to-br from-navy-dark to-black text-white relative overflow-hidden z-10"
+        id="contact">
+        <div
+            class="absolute top-0 right-0 w-64 h-64 bg-primary rounded-full blur-[100px] opacity-20 animate-pulse-slow">
+        </div>
+        <div
+            class="absolute bottom-0 left-0 w-64 h-64 bg-secondary rounded-full blur-[100px] opacity-20 animate-pulse-slow">
+        </div>
         <div class="max-w-4xl mx-auto px-4 relative z-10 text-center animate-reveal">
-            <h2 class="font-display text-4xl md:text-5xl font-bold mb-6 text-white">Let's build something amazing together</h2>
+            <h2 class="font-display text-4xl md:text-5xl font-bold mb-6 text-white">Construyamos algo increíble juntos
+            </h2>
             <p class="text-lg text-gray-300 mb-10 max-w-2xl mx-auto">
-                I'm currently looking for new opportunities. Whether you have a question or just want to say hi, I'll try my best to get back to you!
+                Siempre estoy abierto a nuevos retos tecnológicos. Si tienes una idea en mente, necesitas optimizar tus
+                sistemas actuales o buscas un aliado técnico para escalar tu negocio, escríbeme. Platiquemos sobre cómo
+                hacerlo realidad.
             </p>
-            <a class="liquid-button inline-block px-10 py-4 rounded-full text-white font-bold text-lg shadow-xl shadow-primary/30 hover:shadow-primary/50 transition-all transform hover:-translate-y-1" href="mailto:hello@example.com">
-                Say Hello
-            </a>
+            <div class="flex flex-wrap justify-center gap-6">
+                <a class="liquid-button inline-flex items-center gap-2 px-8 py-4 rounded-full text-white font-bold text-lg shadow-xl shadow-primary/30 hover:shadow-primary/50 transition-all transform hover:-translate-y-1"
+                    href="mailto:luisangelmk26@gmail.com">
+                    <span class="material-symbols-outlined">mail</span>
+                    Envíame un correo
+                </a>
+                <a class="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-[#25D366] text-white font-bold text-lg shadow-xl shadow-[#25D366]/30 hover:shadow-[#25D366]/50 transition-all transform hover:-translate-y-1"
+                    href="https://wa.me/527717084229?text=Hola%20Luis,%20he%20visto%20tu%20portfolio%20y%20me%20gustaría%20hablar%20sobre%20un%20proyecto."
+                    target="_blank" rel="noopener noreferrer">
+                    <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                        <path
+                            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                    </svg>
+                    WhatsApp
+                </a>
+            </div>
         </div>
     </section>
 
     <footer class="bg-black text-gray-400 py-12 border-t border-white/10 relative z-10">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-8 md:gap-6">
                 <div class="flex items-center space-x-2 interactive">
                     <span class="material-symbols-outlined text-primary">code</span>
                     <span class="font-display font-bold text-white text-lg">Luis Angel Mendoza</span>
                 </div>
-                <div class="flex space-x-6">
-                    <a class="hover:text-primary transition-colors hover:scale-110 transform" href="#">GitHub</a>
-                    <a class="hover:text-primary transition-colors hover:scale-110 transform" href="#">LinkedIn</a>
-                    <a class="hover:text-primary transition-colors hover:scale-110 transform" href="#">Twitter</a>
+                <div class="flex flex-wrap justify-center gap-6">
+                    <a class="flex items-center gap-2 hover:text-white transition-colors hover:scale-110 transform"
+                        href="https://github.com/Luismm26" target="_blank" rel="noopener noreferrer">
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                            <path
+                                d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                        </svg>
+                        <span class="text-sm font-medium">GitHub</span>
+                    </a>
+                    <a class="flex items-center gap-2 hover:text-[#0A66C2] transition-colors hover:scale-110 transform"
+                        href="https://www.linkedin.com/in/luis-mendoza-dev/" target="_blank" rel="noopener noreferrer">
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                            <path
+                                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z" />
+                        </svg>
+                        <span class="text-sm font-medium">LinkedIn</span>
+                    </a>
                 </div>
-                <div class="text-sm">
-                    © 2023 Luis Angel Mendoza. All rights reserved.
+                <div class="text-sm text-center md:text-right">
+                    © 2026 Luis Angel Mendoza Mendoza.<br class="md:hidden"> Todos los derechos reservados.
                 </div>
             </div>
         </div>
@@ -341,4 +537,5 @@
 
     <script type="module" src="./assets/js/main.js"></script>
 </body>
+
 </html>
