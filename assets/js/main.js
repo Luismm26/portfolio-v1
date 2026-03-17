@@ -16,7 +16,6 @@ document.addEventListener('DOMContentLoaded', () => {
         cursor.style.left = mouseX + 'px';
         cursor.style.top = mouseY + 'px';
         
-        // Create sparkles occasionally
         if (Math.random() < 0.3) { 
             createSpark(mouseX, mouseY);
         }
@@ -54,14 +53,28 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 1000);
     }
     
-    // Add hover effect listeners
-    const interactiveElements = document.querySelectorAll('a, button, .interactive, input, textarea, .group');
-    interactiveElements.forEach(el => {
-        el.addEventListener('mouseenter', () => {
-            body.classList.add('hovering');
+    // ==========================================
+    // LÓGICA DEL MENÚ MÓVIL
+    // ==========================================
+    const mobileBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const mobileLinks = document.querySelectorAll('.mobile-link');
+
+    if(mobileBtn && mobileMenu) {
+        mobileBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
         });
-        el.addEventListener('mouseleave', () => {
-            body.classList.remove('hovering');
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
         });
-    });
+
+        window.addEventListener('scroll', () => {
+            if (!mobileMenu.classList.contains('hidden')) {
+                mobileMenu.classList.add('hidden');
+            }
+        }, { passive: true });
+    }
 });
